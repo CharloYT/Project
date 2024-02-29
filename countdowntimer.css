@@ -15,10 +15,6 @@ body {
   margin-bottom: 1rem;
   color: #ffffff;
   font-weight: bold;
-  background-image: url("images/");
-  background-clip: initial;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: "Roboto";
 }
 .countdown span {
@@ -44,13 +40,9 @@ body {
   color: #ffffff;
 }
 .time {
-  background-image: url("images/");
-  background-clip: initial;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ color: white;
 }
 .button {
-  position: relative;
   font-size: 17px;
   text-transform: uppercase;
   text-decoration: none;
@@ -64,6 +56,9 @@ body {
   color: black;
   background-color: white;
   justify-content: left;
+  position: absolute;
+  top: 450px;
+  left: 50px;
 }
 .button:hover {
   transform: translateY(-3px);
