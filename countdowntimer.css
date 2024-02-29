@@ -1,0 +1,94 @@
+body {
+  font-family: "Roboto";
+  background-image: url(Back.jpg);
+}
+
+.countdown {
+  align-items: center;
+  font-size: 10px;
+  color: #ffffff;
+  margin-top: 200px;
+}
+
+.countdown h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  background-image: url("images/");
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+}
+.countdown span {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+  color: rgb(255, 255, 255);
+}
+.image {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -30%;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.text {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+.time {
+  background-image: url("images/");
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: flex;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 1;
+  color: black;
+  background-color: white;
+  justify-content: left;
+}
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.button::after {
+  background-color: #fff;
+}
+.btton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
